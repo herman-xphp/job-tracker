@@ -1,44 +1,56 @@
-# 🚀 JobTracker Premium
+# JobTracker
 
-Sebuah aplikasi web pelacak lamaran kerja modern yang dibangun menggunakan **React** dan **Vite**, dirancang dengan standar industri antarmuka **Dark Glassmorphism**. Pantau progres lamaranmu dengan elegan dan efisien, baik melalui daftar tabel yang klasik maupun visualisasi *Kanban Board* yang interaktif.
+A modern job application tracker built with **React** and **Vite**, designed with a **Dark Glassmorphism** UI. Track your application progress elegantly through a classic list view or an interactive Kanban board.
 
-## ✨ Fitur Utama
+## Features
 
-- **Modern Glassmorphism UI**: Tampilan visual kelas premium dengan efek *frosted glass* dan animasi latar belakang *mesh gradient* yang dinamis.
-- **Kanban Board & List View**: Bebas beralih antara format "Tabel Horizontal" atau "Kanban Board" (*Applied, Interview, Offer, Rejected*) untuk melihat progres lamaran kerja dengan cepat.
-- **Responsif di Semua Perangkat**: UI yang beradaptasi secara cerdas di layar laptop, tablet, hingga *smartphone*, dengan fitur navigasi spesifik-mobile.
-- **Data Tersimpan Lokal (Privacy First)**: Seluruh data lamaran disimpan dengan aman secara *offline* melalui *LocalStorage* browser Anda (tanpa perlu *database/backend*).
-- **Sistem Toast Notification**: Notifikasi aksi yang mulus ala aplikasi *startup* setiap kali Anda memodifikasi atau menghapus lamaran.
-- **Backup & Reset Data**: Anda dapat mengekspor (*backup*) seluruh data lamaran ke format JSON, atau menghapus riwayat secara instan melalui menu *Settings*.
+- **Glassmorphism UI** - Premium visual design with frosted glass effects and animated mesh gradient background
+- **Kanban Board & List View** - Switch between a table layout and a Kanban board (Applied, Interview, Offer, Rejected, No Response)
+- **Responsive Design** - Adapts seamlessly across desktop, tablet, and mobile with dedicated mobile navigation
+- **Local Storage (Privacy First)** - All data stored securely offline via browser LocalStorage, no backend required
+- **Search, Filter & Sort** - Quickly find applications by company, position, or notes; filter by status; sort by date or name
+- **Toast Notifications** - Smooth action feedback on every create, update, and delete operation
+- **Backup & Restore** - Export all data to JSON or import from a previous backup via the Settings panel
+- **Accessibility** - ARIA labels, keyboard navigation, focus trapping in modals, and screen reader support
 
-## 🛠️ Teknologi yang Digunakan
+## Tech Stack
 
-- [React 18+](https://reactjs.org/)
-- [Vite](https://vitejs.dev/)
-- Vanilla CSS3 (Custom Glassmorphism Design System)
-- [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans) Font
+- [React 19](https://react.dev/) with TypeScript
+- [Vite 8](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/) with custom glassmorphism theme
+- [Lucide React](https://lucide.dev/) for icons
+- [Vitest](https://vitest.dev/) + [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for testing
+- [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans) font
 
-## 📦 Cara Instalasi & Menjalankan Lokal
+## Getting Started
 
-1. Pastikan Anda telah menginstal [Node.js](https://nodejs.org/) di komputer Anda.
-2. Clone repository ini:
+1. Make sure you have [Node.js](https://nodejs.org/) installed.
+2. Clone the repository:
    ```bash
    git clone https://github.com/herman-xphp/job-tracker.git
    cd job-tracker
    ```
-3. Install semua *dependencies*:
+3. Install dependencies:
    ```bash
    npm install
    ```
-4. Jalankan *development server*:
+4. Start the development server:
    ```bash
    npm run dev
    ```
-5. Buka `http://localhost:5173` di *browser* Anda.
+5. Open `http://localhost:5173` in your browser.
 
-## 🤝 Kontribusi
+## Scripts
 
-Saran, *pull request*, dan laporan *bug* sangat kami apresiasi. Mari berkolaborasi membuat pelacak lamaran kerja *open-source* terbaik!
+| Command | Description |
+|---|---|
+| `npm run dev` | Start development server |
+| `npm run build` | Create production build |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Run ESLint |
+| `npm test` | Run tests |
+| `npm run test:watch` | Run tests in watch mode |
 
----
-*Dibuat dengan ❤️ untuk para Job Seeker.*
+## Contributing
+
+Suggestions, pull requests, and bug reports are welcome.
